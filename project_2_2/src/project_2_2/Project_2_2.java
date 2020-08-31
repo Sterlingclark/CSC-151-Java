@@ -1,7 +1,7 @@
 /*
  * 
  */
-package project_2_2;
+package Project_2_2;
 
 import java.util.Scanner;
 
