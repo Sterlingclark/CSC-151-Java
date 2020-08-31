@@ -1,7 +1,7 @@
 /*
  * 
  */
-package Project_2_2;
+package project_2_2;
 
 import java.util.Scanner;
 
@@ -17,7 +17,7 @@ public class Project_2_2 {
     */
     public static void main(String[] args) {
         // Welcome to the Grade Converter app
-        System.out.println("Welcome to the Grade Coverter Calculator");
+        System.out.println("Welcome to the Letter Grade Converter");
         System.out.println();
 
         // Create a Scanner object 
