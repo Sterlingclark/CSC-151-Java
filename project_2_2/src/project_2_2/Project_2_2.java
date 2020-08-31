@@ -32,10 +32,23 @@ public class Project_2_2 {
             //  whate data value does grade have since I have not specified it? 
             // for choice we say its string but since grades input is a real number 
             // shouldn't we say int grade when assigning it 
-            
-            // calculate the letter grades for numeric values
-            if ()
 
+            // calculate the letter grades for numeric values
+            if (grade >= 88) {
+                System.out.println("Letter Grade: A");
+            } else if (grade >= 80) {
+                System.out.println("Letter Grade: B");
+            } else if (grade >= 67) {
+                System.out.println("Letter Grade: C");
+            } else if (grade <= 59 ) {
+                System.out.println("Letter Grade: F")
+            }
+
+
+            // see if the user wants to continue
+            System.out.print("Continue? (y/n):  ");
+            choice = sc.next();
+            System.out.println();
 
 
         }
