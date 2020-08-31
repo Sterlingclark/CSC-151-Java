@@ -29,7 +29,7 @@ public class Project_2_2 {
             System.out.print("Enter numerical grade:  ");
             double grade = sc.nextDouble();
             // you have to assign a value to a var
-            //  whate data value does grade have since I have not specified it? 
+            //  what data value does grade have since I have not specified it? 
             // for choice we say its string but since grades input is a real number 
             // shouldn't we say int grade when assigning it 
 
