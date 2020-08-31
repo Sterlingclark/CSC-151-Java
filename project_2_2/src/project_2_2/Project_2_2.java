@@ -40,17 +40,16 @@ public class Project_2_2 {
                 System.out.println("Letter Grade: B");
             } else if (grade >= 67) {
                 System.out.println("Letter Grade: C");
+            } else if (grade >= 60) {
+                System.out.println("Letter Grade: D");
             } else if (grade <= 59 ) {
-                System.out.println("Letter Grade: F")
+                System.out.println("Letter Grade: F");
             }
-
 
             // see if the user wants to continue
             System.out.print("Continue? (y/n):  ");
             choice = sc.next();
             System.out.println();
-
-
         }
     }
     
