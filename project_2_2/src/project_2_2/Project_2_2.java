@@ -23,7 +23,22 @@ public class Project_2_2 {
         // Create a Scanner object 
         Scanner sc = new Scanner(System.in);
 
-        
+        String choice = "y";
+        while (choice.equalsIgnoreCase("y")) {
+            // get the numerical grade from user
+            System.out.print("Enter numerical grade:  ");
+            double grade = sc.nextDouble();
+            // you have to assign a value to a var
+            //  whate data value does grade have since I have not specified it? 
+            // for choice we say its string but since grades input is a real number 
+            // shouldn't we say int grade when assigning it 
+            
+            // calculate the letter grades for numeric values
+            if ()
+
+
+
+        }
     }
     
 }
