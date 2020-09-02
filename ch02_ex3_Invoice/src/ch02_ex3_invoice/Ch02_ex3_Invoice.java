@@ -1,16 +1,11 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+* CSC-151-Java Programing
+* Sterling Clark
+* 9/2/20
+*/
 package ch02_ex3_invoice;
 
-// CSC-151-Java Programing
-
 import java.util.Scanner;
-
-// Sterling Clark 
-// 9/2/20 @author sterl
 
 public class Ch02_ex3_Invoice {
 
@@ -29,7 +24,7 @@ public class Ch02_ex3_Invoice {
 
         // perform invoice calculations until choice isn't equal to "n" or "N"
         String choice = "y";
-        while (choice.equalsIgnoreCase("n")) {
+        while (!choice.equalsIgnoreCase("n")) {
             // get the invoice subtotal from the user
             System.out.print("Enter subtotal:   ");
             double subtotal = sc.nextDouble();
@@ -67,10 +62,9 @@ public class Ch02_ex3_Invoice {
 
         // Display message with invoice count and average discount
         String message = "Number of inboices: " + invoiceCount + "\n"
-                        + "Average Invoice:   " + invoiceTotal / invoiceCount + "\n"
-                        + "Average Discount:  " + discountTotal / invoiceCount + "\n";
+                       + "Average Invoice:   " + invoiceTotal / invoiceCount + "\n"
+                       + "Average Discount:  " + discountTotal / invoiceCount + "\n";
         System.out.println(message);
         
     }
-    
 }
