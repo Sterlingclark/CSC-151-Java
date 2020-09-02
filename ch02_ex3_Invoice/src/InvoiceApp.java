@@ -1,3 +1,7 @@
+// CSC-151-Java Programing
+// Sterling Clark 
+// 9/2/20
+
 import java.util.Scanner;
 
 public class InvoiceApp {
@@ -10,9 +14,9 @@ public class InvoiceApp {
         // create a Scanner object named sc
         Scanner sc = new Scanner(System.in);
 
-        // perform invoice calculations until choice isn't equal to "y" or "Y"
+        // perform invoice calculations until choice isn't equal to "n" or "N"
         String choice = "y";
-        while (choice.equalsIgnoreCase("y")) {
+        while (choice.equalsIgnoreCase("n")) {
             // get the invoice subtotal from the user
             System.out.print("Enter subtotal:   ");
             double subtotal = sc.nextDouble();
