@@ -1,12 +1,18 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package ch02_ex3_invoice;
+
 // CSC-151-Java Programing
-// Sterling Clark 
-// 9/2/20
 
 import java.util.Scanner;
 
-import sun.awt.AWTAccessor.InvocationEventAccessor;
+// Sterling Clark 
+// 9/2/20 @author sterl
 
-public class InvoiceApp {
+public class Ch02_ex3_Invoice {
 
     public static void main(String[] args) {
         // welcome the user to the program
@@ -64,7 +70,7 @@ public class InvoiceApp {
                         + "Average Invoice:   " + invoiceTotal / invoiceCount + "\n"
                         + "Average Discount:  " + discountTotal / invoiceCount + "\n";
         System.out.println(message);
-
-
+        
     }
+    
 }
