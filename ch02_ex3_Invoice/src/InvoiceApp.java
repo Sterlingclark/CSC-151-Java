@@ -4,6 +4,8 @@
 
 import java.util.Scanner;
 
+import sun.awt.AWTAccessor.InvocationEventAccessor;
+
 public class InvoiceApp {
 
     public static void main(String[] args) {
@@ -15,7 +17,7 @@ public class InvoiceApp {
         Scanner sc = new Scanner(System.in);
 
         // created variables for calculating averages
-        double inboiceTotal = 0.0;
+        double invoiceTotal = 0.0;
         double discountTotal = 0.0;
         int invoiceCount = 0;
 
@@ -40,6 +42,11 @@ public class InvoiceApp {
             double discountAmount = subtotal * discountPercent;
             double total = subtotal - discountAmount;
 
+            // calculate the invoice count and total
+            invoiceTotal = invoiceTotal + total;
+            discountTotal = discountTotal + discountAmount;
+            invoiceCount = invoiceCount + 1;
+
             // display the discount amount and total
             String message = "Discount percent: " + discountPercent + "\n"
                            + "Discount amount:  " + discountAmount + "\n"
@@ -51,5 +58,13 @@ public class InvoiceApp {
             choice = sc.next();
             System.out.println();
         }
+
+        // Display message with invoice count and average discount
+        String message = "Number of inboices: " + invoiceCount + "\n"
+                        + "Average Invoice:   " + invoiceTotal / invoiceCount + "\n"
+                        + "Average Discount:  " + discountTotal / invoiceCount + "\n";
+        System.out.println(message);
+
+
     }
 }
