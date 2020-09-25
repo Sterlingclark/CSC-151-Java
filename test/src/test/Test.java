@@ -16,15 +16,16 @@ public class Test {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int items = 3;
-        for (int i = 1; i <= items; i++) {
-        int result = 1;
-        for (int j = i; j >= 1; j--) {
-        result *= j;
+        
+        int number = 0;
+int maxNumber = 0;
+for (int i = 0; i <= 10; i++) {
+    number = (int)(Math.random() * 100);
+    if (number >= maxNumber) {
+        maxNumber = number;
     }
-    System.out.println("Factorial " + i + " = " + result);
 }
- 
+}
     }
     
-}
+        }

@@ -7,63 +7,33 @@ import java.util.Scanner;
 
 
 public class Ch04_Project1 {
-    static void printSquareRow(int x) {
-//        System.out.println(x);
-        int square = x * x;
-        int cubed = x * x * x;
-        System.out.println(x + "\t" + square + "\t" + cubed);
-    }
 
     public static void main(String[] args) {
         System.out.println("Welcome to the squares and cubes table\n");
 
         Scanner sc = new Scanner(System.in);
         String choice = "y";
+        while (choice.equalsIgnoreCase("y")) {
 
         System.out.print("Enter an integer:   ");
         int integer = sc.nextInt();
-        System.out.println("Number\tSquared\tCubed");
-        System.out.println("======\t=======\t=====");
+        System.out.println();
+        String table = "";
+        table += "Number\tSquared\tCubed\n";
+        table += "======\t=======\t=====\n";
+        
         for (int i = 1; i <= integer; i++) {
-             //add nuber to starting row
-//             System.out.println(i);
-            printSquareRow(i);
-        //          String row = integer + "   ";  
+            int square = i * i;
+            int cubed = i * i * i;
+            table += i + "\t" + square + "\t" + cubed + "\n";
         }
         
+        System.out.println(table);
         
-        
-       
-       
-       
-       
-       
-//       while (!choice.equalsIgnoreCase("n")) {
-//           // get input from user
-//           System.out.print("Enter an integer:   ");
-//            int integer = sc.nextInt();
-//           
-//           // initialize the table variable
-//           String table = "";
-//           // create header row and add to table
-//           String headerRow = "Number   Squared   Cubed";
-//           
-//           // loop through the numbers
-//           for (int i = 1; i <= integer; i++) {
-//               //add nuber to starting row
-//               String row = integer + "   ";  
-//           }
-//           System.out.println();
-//           System.out.println(table);
-//           
-//          // see if the user wants to continue
-//            System.out.print("Continue? (y/n): ");
-//            choice = sc.next();
-//            System.out.println(); 
-//       }
-       
-       
-       
+        // see if the user wants to continue
+        System.out.print("Continue? (y/n): ");
+        choice = sc.next();
+        System.out.println();
+       } 
     }
-    
 }
