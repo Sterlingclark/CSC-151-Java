@@ -1,31 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package test;
-
-/**
- *
- * @author sterl
- */
-public class Test {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-        
-        int number = 0;
-int maxNumber = 0;
-for (int i = 0; i <= 10; i++) {
-    number = (int)(Math.random() * 100);
-    if (number >= maxNumber) {
-        maxNumber = number;
-    }
+public class GradeCurveApp {
+   public static void main(String[] args) {
+      int grade = 95;
+      GradeCurve curve = new GradeCurve();
+      curve.lowerGrade(grade);
+      System.out.println(grade);
+   }
 }
+
+public class GradeCurve {
+   public void lowerGrade(int g) {
+      g -= 5;
+   }
 }
-    }
-    
-        }
